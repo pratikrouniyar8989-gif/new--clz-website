@@ -1,34 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses - ISMT British College</title>
+    <title>Programs · ISMT British College</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="ISMT Logo" height="50">
-                ISMT British College
+                <img src="images/logo.png" alt="ISMT Logo">
+                <div class="brand-text">
+                    ISMT British College
+                    <small>International Campus</small>
+                </div>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav"
+                aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="siteNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="courses.html">Courses</a>
+                        <a class="nav-link active" href="courses.html">Programs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="admissions.html">Admissions</a>
@@ -37,280 +44,271 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-                <div class="ms-3">
-                    <a href="admissions.html" class="btn btn-light">Apply Now</a>
+                <div class="ms-lg-3 nav-cta">
+                    <a class="btn btn-brand" href="admissions.html">Apply now</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="overlay"></div>
+    <header class="page-hero">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Our Courses</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Courses</li>
-                        </ol>
-                    </nav>
-                </div>
+            <span class="eyebrow"><i class="fa-solid fa-graduation-cap"></i> Program catalogue</span>
+            <h1>British degrees with immersion-based delivery.</h1>
+            <p>Every program is validated by the University of Sunderland or Pearson BTEC, giving you an international
+                credential backed by project-heavy learning.</p>
+            <div class="breadcrumb-modern">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Programs</span>
             </div>
         </div>
     </header>
 
-    <!-- Courses Section -->
-    <section class="py-5">
+    <section>
         <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">Undergraduate & Postgraduate Programs</h2>
-                    <p class="lead">ISMT British College offers a range of internationally recognized programs in collaboration with the University of Sunderland and Pearson BTEC. Our courses are designed to provide students with the knowledge and skills needed for successful careers in today's competitive global market.</p>
-                </div>
+            <div class="section-heading">
+                <span class="eyebrow"><i class="fa-solid fa-asterisk"></i> How we design curriculum</span>
+                <h2>Studio pedagogy meets global assessment.</h2>
+                <p>Modules are clustered into pathways so you can stack foundational literacy, specialisation, and
+                    industry immersion in a predictable rhythm.</p>
             </div>
-
-            <!-- IT Programs -->
-            <h3 class="program-category-title mb-4">Information Technology Programs</h3>
-            <div class="row g-4 mb-5">
-                <div class="col-lg-6">
-                    <div class="card course-card h-100">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="images/computer-systems.jpg" class="img-fluid rounded-start h-100 object-cover" alt="Computer Systems Engineering">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">BSc (Hons) Computer Systems Engineering</h4>
-                                    <p class="card-text">A comprehensive program that covers computer hardware, software development, networking, and systems integration. Graduates are prepared for careers in IT infrastructure management, software development, and systems engineering.</p>
-                                    <ul class="course-details">
-                                        <li><strong>Duration:</strong> 3 years</li>
-                                        <li><strong>Awarding Body:</strong> University of Sunderland, UK</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal1">Know More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="glance-grid mb-4">
+                <div class="glance-card">
+                    <span>3</span>
+                    Undergraduate pathways
                 </div>
-                <div class="col-lg-6">
-                    <div class="card course-card h-100">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="images/cyber-security.jpg" class="img-fluid rounded-start h-100 object-cover" alt="Cyber Security">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">BSc (Hons) Cyber Security and Digital Forensics</h4>
-                                    <p class="card-text">This program focuses on network security, ethical hacking, digital forensics, and cybercrime investigation. Students develop skills to protect organizations from cyber threats and investigate security breaches.</p>
-                                    <ul class="course-details">
-                                        <li><strong>Duration:</strong> 3 years</li>
-                                        <li><strong>Awarding Body:</strong> University of Sunderland, UK</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal2">Know More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="glance-card">
+                    <span>1</span>
+                    Postgraduate MBA
                 </div>
-            </div>
-
-            <!-- Business Programs -->
-            <h3 class="program-category-title mb-4">Business Programs</h3>
-            <div class="row g-4 mb-5">
-                <div class="col-lg-6">
-                    <div class="card course-card h-100">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="images/business-management.jpg" class="img-fluid rounded-start h-100 object-cover" alt="Business Management">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">BA (Hons) Business and Management (BBA)</h4>
-                                    <p class="card-text">A comprehensive business program covering marketing, finance, human resources, operations, and strategic management. Graduates are prepared for careers in various business sectors or to start their own ventures.</p>
-                                    <ul class="course-details">
-                                        <li><strong>Duration:</strong> 3 years</li>
-                                        <li><strong>Awarding Body:</strong> University of Sunderland, UK</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal3">Know More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card course-card h-100">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="images/tourism-hospitality.jpg" class="img-fluid rounded-start h-100 object-cover" alt="Tourism and Hospitality">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">BSc (Hons) International Tourism and Hospitality Management</h4>
-                                    <p class="card-text">This program prepares students for careers in the global hospitality industry, covering hotel management, tourism operations, event planning, and customer service excellence.</p>
-                                    <ul class="course-details">
-                                        <li><strong>Duration:</strong> 3 years</li>
-                                        <li><strong>Awarding Body:</strong> University of Sunderland, UK</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal4">Know More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Postgraduate Programs -->
-            <h3 class="program-category-title mb-4">Postgraduate Programs</h3>
-            <div class="row g-4">
-                <div class="col-lg-6 mx-auto">
-                    <div class="card course-card h-100">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="images/mba.jpg" class="img-fluid rounded-start h-100 object-cover" alt="MBA">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Master of Business Administration (MBA)</h4>
-                                    <p class="card-text">Our MBA program is designed for professionals seeking to enhance their management skills and advance their careers. The curriculum covers advanced business concepts, leadership, strategic management, and global business practices.</p>
-                                    <ul class="course-details">
-                                        <li><strong>Duration:</strong> 1.5 years</li>
-                                        <li><strong>Awarding Body:</strong> University of Sunderland, UK</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal5">Know More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="glance-card">
+                    <span>160+</span>
+                    Studio hours per year
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Course Modals -->
-    <!-- Modal 1 -->
-    <div class="modal fade" id="courseModal1" tabindex="-1" aria-labelledby="courseModalLabel1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="courseModalLabel1">BSc (Hons) Computer Systems Engineering</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row mb-4">
-                        <div class="col-md-6">
-                            <img src="images/computer-systems.jpg" class="img-fluid rounded mb-3" alt="Computer Systems Engineering">
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Program Overview</h5>
-                            <p>This program provides a comprehensive understanding of computer systems, software development, networking, and systems integration. Students learn to design, implement, and manage IT infrastructure and software solutions.</p>
-                            <ul class="course-details">
-                                <li><strong>Duration:</strong> 3 years</li>
-                                <li><strong>Awarding Body:</strong> University of Sunderland, UK</li>
-                                <li><strong>Entry Requirements:</strong> Higher Secondary with minimum 60% in Science/Math</li>
-                                <li><strong>Intake:</strong> September & February</li>
-                            </ul>
-                        </div>
+    <section>
+        <div class="container">
+            <article class="course-track">
+                <header>
+                    <h3>Intelligent Technology Systems</h3>
+                    <div class="course-tags">
+                        <span class="chip">Engineering</span>
+                        <span class="chip dark">Lab-intensive</span>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h5>Key Modules</h5>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li>Programming Fundamentals</li>
-                                        <li>Computer Architecture</li>
-                                        <li>Database Systems</li>
-                                        <li>Web Development</li>
-                                        <li>Networking Essentials</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li>Software Engineering</li>
-                                        <li>System Analysis and Design</li>
-                                        <li>Mobile Application Development</li>
-                                        <li>Cloud Computing</li>
-                                        <li>Final Year Project</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <h5>Career Prospects</h5>
-                            <p>Graduates can pursue careers as:</p>
+                </header>
+                <p>Build the architecture that powers connected businesses. Expect live security drills, cloud labs,
+                    and sprint reviews with practitioners.</p>
+                <div class="row g-4 mt-3">
+                    <div class="col-md-6">
+                        <div class="pill">
+                            <h4>BSc (Hons) Computer Systems Engineering</h4>
                             <ul>
-                                <li>Software Developer</li>
-                                <li>Systems Engineer</li>
-                                <li>Network Administrator</li>
-                                <li>IT Project Manager</li>
-                                <li>Database Administrator</li>
+                                <li>Embedded systems, automation & DevOps</li>
+                                <li>Capstone: systems integration for local enterprise</li>
                             </ul>
+                            <span class="badge-chip">Awarded by University of Sunderland</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pill">
+                            <h4>BSc (Hons) Cyber Security & Digital Forensics</h4>
+                            <ul>
+                                <li>Offensive security, incident response, forensic analytics</li>
+                                <li>Capstone: blue team vs red team exercise</li>
+                            </ul>
+                            <span class="badge-chip">Industry mentors from CERT Nepal</span>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+            </article>
+
+            <article class="course-track">
+                <header>
+                    <h3>Global Business Studio</h3>
+                    <div class="course-tags">
+                        <span class="chip">Management</span>
+                        <span class="chip dark">Field projects</span>
+                    </div>
+                </header>
+                <p>Navigate finance, operations, and brand strategy while working with emerging Nepali enterprises and
+                    multinational partners.</p>
+                <div class="row g-4 mt-3">
+                    <div class="col-md-6">
+                        <div class="pill">
+                            <h4>BA (Hons) Business & Management</h4>
+                            <ul>
+                                <li>Concentrations in marketing, finance, or entrepreneurship</li>
+                                <li>Boardroom simulation each semester</li>
+                            </ul>
+                            <span class="badge-chip">Professional mentors from NCHL, Daraz, Nabil</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pill">
+                            <h4>MBA (Accelerated)</h4>
+                            <ul>
+                                <li>18-month build with strategy studio and leadership intensives</li>
+                                <li>Designed for professionals with evening/weekend blocks</li>
+                            </ul>
+                            <span class="badge-chip">Peer consulting lab</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </article>
 
-    <!-- Additional modals for other courses would be similar -->
-
-    <!-- Call to Action -->
-    <section class="cta-section text-white text-center py-5">
-        <div class="container">
-            <h2 class="mb-4">Ready to Start Your Educational Journey?</h2>
-            <p class="lead mb-4">Join ISMT British College and take the first step towards a successful global career</p>
-            <a href="admissions.html" class="btn btn-light btn-lg">Apply Now</a>
+            <article class="course-track">
+                <header>
+                    <h3>Hospitality & Experience Lab</h3>
+                    <div class="course-tags">
+                        <span class="chip">Tourism</span>
+                        <span class="chip dark">Live property audits</span>
+                    </div>
+                </header>
+                <p>Manage guest journeys, destination storytelling, and service innovation for Nepal’s fastest-growing
+                    hospitality brands.</p>
+                <div class="row g-4 mt-3">
+                    <div class="col-md-6">
+                        <div class="pill">
+                            <h4>BSc (Hons) International Tourism & Hospitality Management</h4>
+                            <ul>
+                                <li>Experience design, event leadership, property analytics</li>
+                                <li>Capstone: design a hospitality concept for a Nepali destination</li>
+                            </ul>
+                            <span class="badge-chip">Partner venues: Soaltee, Aloft, Tiger Palace</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pill">
+                            <h4>Pearson BTEC Higher Nationals</h4>
+                            <ul>
+                                <li>Stackable diplomas for learners building toward a degree</li>
+                                <li>Flexible entry for working professionals</li>
+                            </ul>
+                            <span class="badge-chip">Direct articulation to year 2/3</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <section class="bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>ISMT British College</h5>
-                    <p>Providing quality education and international degrees in Nepal since 2011.</p>
-                    <div class="social-icons">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Home</a></li>
-                        <li><a href="about.html" class="text-white">About Us</a></li>
-                        <li><a href="courses.html" class="text-white">Courses</a></li>
-                        <li><a href="admissions.html" class="text-white">Admissions</a></li>
-                        <li><a href="contact.html" class="text-white">Contact</a></li>
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow"><i class="fa-solid fa-file-circle-check"></i> Entry essentials</span>
+                <h2>Who thrives at ISMT?</h2>
+                <p>We welcome learners ready to mix analytical thinking with empathy and grit.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-card">
+                    <span>UG</span>
+                    <h4>Undergraduate entry</h4>
+                    <ul class="requirement-list">
+                        <li><i class="fa-solid fa-check"></i>10+2 or equivalent (minimum 60%)</li>
+                        <li><i class="fa-solid fa-check"></i>Competence in Math/English</li>
+                        <li><i class="fa-solid fa-check"></i>Admissions interview + essay</li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h5>Contact Information</h5>
-                    <address>
-                        <p><i class="fas fa-map-marker-alt me-2"></i> Kathmandu, Nepal</p>
-                        <p><i class="fas fa-phone me-2"></i> +977 1234567890</p>
-                        <p><i class="fas fa-envelope me-2"></i> info@ismtcollege.edu.np</p>
-                    </address>
+                <div class="process-card">
+                    <span>PG</span>
+                    <h4>Postgraduate entry</h4>
+                    <ul class="requirement-list">
+                        <li><i class="fa-solid fa-check"></i>Bachelor’s degree (min 50%)</li>
+                        <li><i class="fa-solid fa-check"></i>2+ years professional experience preferred</li>
+                        <li><i class="fa-solid fa-check"></i>Leadership statement + interview</li>
+                    </ul>
                 </div>
+                <div class="process-card">
+                    <span>INT</span>
+                    <h4>International applicants</h4>
+                    <ul class="requirement-list">
+                        <li><i class="fa-solid fa-check"></i>IELTS 6.0 (UG) / 6.5 (PG) or equivalent</li>
+                        <li><i class="fa-solid fa-check"></i>Passport & financial documentation</li>
+                        <li><i class="fa-solid fa-check"></i>Visa support through our global desk</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="cta-panel text-center text-lg-start">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <h2>Need help choosing the right pathway?</h2>
+                        <p>Our academic advisors host weekly 1:1 discovery calls to map your aspirations to the right
+                            curriculum.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="admissions.html" class="btn btn-brand me-2">Start application</a>
+                        <a href="contact.html" class="btn btn-ghost">Chat with advisor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <img src="images/logo.png" alt="ISMT Logo" height="48">
+                        <div>
+                            <h5 class="mb-1">ISMT British College</h5>
+                            <small>Accredited centre · Kathmandu</small>
+                        </div>
+                    </div>
+                    <p>Delivering British qualifications in Nepal with studios, labs, and mentoring that accelerate
+                        global careers.</p>
+                    <div class="social-list">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Navigate</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="courses.html">Programs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="admissions.html">Admissions</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html#visit">Campus visit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Visit</h5>
+                    <p class="mb-1">Tinkune, Kathmandu 44600</p>
+                    <p class="mb-1">+977 1 519 0000</p>
+                    <p class="mb-0">admissions@ismtcollege.edu.np</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-white-50">
+                &copy; <span id="year"></span> ISMT British College. Crafted for next-generation learners.
             </div>
         </div>
     </footer>
-    <div class="bg-primary text-white text-center py-3">
-        <div class="container">
-            <p class="m-0">&copy; 2023 ISMT British College. All Rights Reserved.</p>
-        </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
+
 </html>
 
